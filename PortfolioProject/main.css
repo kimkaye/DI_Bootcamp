@@ -65,9 +65,11 @@ footer {
 .wrapper-skills{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
-    padding: 4rem;
+    padding-left: 10rem;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
     justify-items: center;
     align-content: center;
 
@@ -130,7 +132,7 @@ footer {
 
 .about-left h2{
     font-size: 2rem;
-    margin: 2.2rem 0 0.6rem 0;
+    margin: 1rem 0 0.6rem 0;
     line-height: 1.2;
     padding-bottom: 1rem;
     border-bottom: 2px solid white;
@@ -139,7 +141,7 @@ footer {
     text-transform: uppercase;
     font-weight: 200;
     letter-spacing: 5px;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 .icons{
     /*background: #12192c;*/
@@ -175,13 +177,11 @@ footer {
     justify-content: center;
     text-align: center;
     color: black;
-    padding: 4rem 2rem 5rem 3rem;
-;
+    padding: 4rem 4rem 5rem 3rem;
 }
 .about-right h1{
     font-size: 3rem;
     text-transform: uppercase;
-    margin-top: 15vh;
 }
 .about-right h1 span{
     color: wheat;
@@ -189,17 +189,14 @@ footer {
 .about-right h2{
     font-weight: 600;
 }
-/*.about-btns{*/
-/*    display: flex;*/
-/*    margin: 1rem 0;*/
-/*}*/
+
 .btn{
     font-size: 0.9rem;
     text-transform: uppercase;
     border: 2px solid #fff;
     border-radius: 20px;
     padding: 0.55rem 0;
-    width: 130px;
+    width: 10rem;
     font-weight: 600;
     background: wheat;
     margin: 0 0.5rem;
