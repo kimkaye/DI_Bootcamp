@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    height: 100vm;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer"
+}
+header{
+    grid-area: header;
+    border: 1px solid black;
+    background-color: wheat;
+    padding: 25px;
+}
+article {
+    grid-area: content;
+    border: 1px solid black;
+    background-color: plum;
+    padding: 50px;
+}
+aside{
+    grid-area: sidebar;
+    border: 1px solid black;
+    background-color: darkolivegreen;
+    padding: 50px;
+}
+footer{
+    grid-area: footer;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    padding: 50px;
+}

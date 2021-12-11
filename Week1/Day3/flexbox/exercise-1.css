@@ -1,0 +1,31 @@
+*{
+    font-size: 18px;
+}
+.outer-div{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+    align-items: stretch;
+    border: 1px solid red;
+    justify-content: space-between;
+
+}
+.inner-div{
+    /*width: 100px;*/
+    border: 1px solid black;
+    padding-top: 30px;
+    text-align: center;
+}
+.box-1{
+    background-color: pink;
+}
+.box-2{
+    background-color: deeppink;
+    padding: 50px 200px 50px 200px;
+    align-self: center;
+}
+.box-3{
+    background-color: hotpink;
+}

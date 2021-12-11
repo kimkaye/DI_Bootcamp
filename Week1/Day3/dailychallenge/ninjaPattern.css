@@ -1,0 +1,31 @@
+/*.main{*/
+/*    height: 500px;*/
+/*    width: 500px;*/
+/*}*/
+/*.wrapper{*/
+/*    display: flex;*/
+/*    !*width: 100%;*!*/
+/*    justify-content: space-between;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+/*.item{*/
+/*    height: 30px;*/
+/*    width: 30px;*/
+/*}*/
+/*.pink{*/
+/*    background-color: pink;*/
+/*}*/
+/*.lavender{*/
+/*    background-color: lavender;*/
+/*}*/
+/*.wheat{*/
+/*    background-color: wheat;*/
+/*}*/
+
+.check{
+    background-color: white;
+    background-image: linear-gradient(
+    red 25% green 25% pink 25% black 25%);
+    background-size:100px 100px;
+    background-position: 0 0, 50px 50px;
+}

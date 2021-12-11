@@ -1,0 +1,128 @@
+body{
+    margin: auto 0;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 100px;
+    background-color: lavender;
+}
+.a{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+p{
+    font-size: 5vh;
+    padding: 10px;
+}
+.a img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+/*.zone{*/
+/*    cursor: pointer;*/
+/*    color: #fff;*/
+/*    font-size: 2em;*/
+/*    border-radius: 4px;*/
+/*    border: 1px solid #bbb;*/
+/*    transition: all 0.3s linear;*/
+/*}*/
+
+/*.main-nav{*/
+/*    display: flex;*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    !*overflow: hidden;*!*/
+/*    background-color: wheat;*/
+/*}*/
+
+@media only screen and (max-width: 600px){
+    /*.main-nav{*/
+    /*    font-size: 0.5em;*/
+    /*    padding: 0;*/
+
+    /*}*/
+}
+/*li {*/
+/*    float: right;*/
+/*    !*padding-left: 10px;*!*/
+/*    !*padding-right: 10px;*!*/
+/*    padding: 20px;*/
+/*}*/
+/*li a, .left-icon{*/
+/*    display: block;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    padding: 14px 16px;*/
+/*    text-decoration: none;*/
+/*    font-weight: bold;*/
+/*    font-size: 25px;*/
+/*}*/
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: wheat;
+    color: white;
+    text-align: center;
+}
+.push{
+    margin-left: auto;
+}
+
+
+/*/////*/
+
+.wrapper{
+    /*width: 100%;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    /*padding: 100px;*/
+    /*justify-content: space-around;*/
+    align-items: flex-start;
+    margin: auto 0;
+    flex: 70%;
+
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+    /*padding: 100px;*/
+    /*align-content: space-between;*/
+    align-items: flex-start;
+    flex: 30%;
+}
+
+.item {
+    margin: 30px;
+    /*width: 300px;*/
+    /*height: 300px;*/
+    width: 100%;
+
+}
+.contact{
+    list-style-type: none;
+    margin: 0;
+}
+.contact-info{
+    font-size: 20px;
+}
+li{
+    padding: 10px;
+    list-style-type: none;
+}
+
+

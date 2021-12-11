@@ -1,0 +1,40 @@
+h1{
+    font-size: 22px;
+    color: gray;
+    font-weight: bold;
+}
+p{
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+
+}
+.price {
+    color: grey;
+    font-size: 22px;
+}
+.box button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    background-color: gray;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.grid-wrapper{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 100px;
+}
+.box{
+    background-color: wheat;
+    /*padding: 30px;*/
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
