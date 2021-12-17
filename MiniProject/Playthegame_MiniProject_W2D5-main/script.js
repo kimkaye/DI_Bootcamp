@@ -18,39 +18,19 @@ function playTheGame(){
         }
     }
 }
-// function test(userNumber,computerNumber){
-//     for(let i = 0; i< 2; i++) {
-//         if (userNumber == computerNumber) {
-//             alert("WINNER");
-//             break;
-//         } else if (userNumber > computerNumber) {
-//             userNumber = prompt("Your number is bigger then the computer’s, guess again");
-//         } else if (userNumber < computerNumber) {
-//             userNumber = prompt("Your number is smaller then the computer’s, guess again");
-//         }
-//
-//     }
-//
-// }
-
 function test(userNumber,computerNumber){
-    let numbersOfGuessing = 1;
-    while(numbersOfGuessing != 3){
-        if (userNumber == computerNumber) {
+    for(let i = 0; i< 2; i++) {
+        if (userNumber === computerNumber) {
             alert("WINNER");
-            numbersOfGuessing = 0;
-            break;
+            return;
         } else if (userNumber > computerNumber) {
             userNumber = prompt("Your number is bigger then the computer’s, guess again");
-            numbersOfGuessing++;
+            userNumber = parseInt(userNumber);
         } else if (userNumber < computerNumber) {
             userNumber = prompt("Your number is smaller then the computer’s, guess again");
-            numbersOfGuessing++
+            userNumber = parseInt(userNumber);
         }
     }
-    if(numbersOfGuessing == 3){
-        alert("out of chances");
-    }
-
+    alert("out of chances");
 }
 
