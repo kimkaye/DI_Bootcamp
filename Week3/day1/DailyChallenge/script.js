@@ -1,23 +1,14 @@
-let plants = ["planets Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
-let colors = [];
-let newDiv = document.createElement("div");
+let planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+let colors = ["blue","green","yellow","pink","grey","white","red","orange"];
 
-
-for (let i = 0; i<plants.length; i++) {
-    let divPlants =  document.createElement("div");
-    img.setAttribute("class", shoppingPictures[i])
-
-    let text = document.createTextNode(`The user bought ${shoppingItems[i]}`);
-    para.appendChild(text);
-    div.appendChild(para);
-
-    if (shoppingItems[i] == "shampoo"){
-        img.classList.add("cart");
-    } else {
-        img.classList.add("cartTwo");
-    }
-
-    // div.appendChild(img);
+let section = document.getElementsByClassName("listPlanets")[0];
+console.log(section);
+for (let i = 0; i<planets.length; i++) {
+    let newDiv = document.createElement("div");
+    newDiv.classList.add("planet", planets[i]);
+    newDiv.style.backgroundColor = colors[i];
+    section.appendChild(newDiv);
+    // newDiv.
 }
 
 
