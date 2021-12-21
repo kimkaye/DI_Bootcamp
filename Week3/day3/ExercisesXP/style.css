@@ -1,0 +1,31 @@
+.dropzone {
+    width : 200px;
+    height:  200px;
+    border:  2px solid black;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender;
+}
+
+.draggedItem {
+    width : 70px;
+    height:  70px;
+    padding:  2px;
+    border:  2px solid black;
+    border-radius:  20%;
+    background-color: pink;
+}
+
+.draggedItemAfter {
+    width : 70px;
+    height:  70px;
+    padding:  2px;
+    border:  2px solid deeppink;
+    border-radius:  20%;
+    background-color: pink;
+}
+
+
+
+
+
