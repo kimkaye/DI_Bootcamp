@@ -1,18 +1,18 @@
 //Exercise 1 : Move The Box - Move the box from left to right
 
-// function myMove(){
-//     let animate = document.getElementById("animate");
-//     let stop = 0;
-//     let id = setInterval(frame, 5);
-//     function frame() {
-//         if (stop === 350) {
-//             clearInterval(id);
-//         } else {
-//             stop++;
-//             animate.style.left = stop + 'px';
-//         }
-//     }
-// }
+function myMove(){
+    let animate = document.getElementById("animate");
+    let stop = 0;
+    let id = setInterval(frame, 5);
+    function frame() {
+        if (stop === 350) {
+            clearInterval(id);
+        } else {
+            stop++;
+            animate.style.left = stop + 'px';
+        }
+    }
+}
 
 //Exercise 2: Drag & Drop
 
