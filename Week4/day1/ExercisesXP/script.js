@@ -60,7 +60,7 @@
 // Exercise 2 : Ternary Operator
 
 // let experiencePoints ="";
-
+//
 // function winBattle(){
 //     return true;
 // }
@@ -70,8 +70,8 @@
 // }
 //
 // console.log(experiencePoints());
-
-
+//
+//
 // function winBattle(){
 //     return true;
 // }
@@ -124,3 +124,4 @@ console.log(details);
 details.forEach((elem, index, arr) =>  bankAmount += arr[index]
 )
 console.log(bankAmount);
+
