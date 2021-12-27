@@ -1,0 +1,127 @@
+# Project Coloring
+
+# First Part
+
+# HTML File/CSS file
+1. In the body, we create 2 sections (it can be also 2 divs)
+1. id="pallet"
+2. id="canvas"
+2. id="pallet" -> be a grid with 3 columns, 8 rows.
+The button with a specific id="clear" so we can style this one differently. We will use span
+(grid-template-rows,grid-template-columns)
+
+3. id="canvas" -> be a grid with 60 columns, 24 rows, some gap
+
+
+# JS File
+1. For the pallet
+-> we could do an array of colors
+* loop trough the array of colors, in each loop we create a div,
+we give to the div a background-color and a border black
+* and we append the div to the relevant section
+* for each div we could add a class
+* border: 2px solid black
+
+2. For the canvas
+-> 24 rows
+-> 60 columns
+* loop, range is 24x60, in each loop we create a div,
+we give to the div a background-color white
+* the section canvas will have a background color grey
+* and we append the div to the relevant section
+
+
+---
+
+# Second part
+
+# JS FILE
+
+
+IN YOUR JS FILE YOU HAVE
+2 LOOPS : ONE TO CREATE THE COLORS PALLET
+ONE TO CREATE THE BOXES OF THE CANVAS
+
+
+
+1. Pallet
+When I create the pallet, do it through a loop --> in this loop, we create a div for each color
+
+* when I create the div, we add an addEventListener("click", retrieveColor)
+
+* retrieve color needs to retrieve the background colo of the color I clicked
+function retrieveColor(){
+divThatIclicked.backgroundColor
+}
+==> event object, will give me the target that I clicked on
+==> need to hold/store the backgroundColor of the div I clicked on
+-> we need to create a variable to store the color I clicked
+-> we need to create a global variable
+
+
+----------------------
+
+2. Canvas
+When I create the canvas, do it through a loop --> in this loop, we create a div for box of the canvas
+* when I create the div, we add an addEventListener("click", paint)
+* the paint functions, changes the background color of the box I clicked on
+==> event object, will give me the target that I clicked on
+
+//global scope
+let username;
+
+//local scope
+function hello(){
+username = "John"
+
+}
+
+//local scope
+function helloTwo(){
+console.log(username)
+
+}
+
+----
+
+3. Clear
+-> when we click on the clear button, the background color of EACH DIV of the canvas becomes white
+When I created all the divs of the canvas, I can give to each div a class
+-> to retrieve all the div -> getElementsByClassName
+-> loop -> change the background color of each div to white
+
+---
+
+4. Paint while moving the mouse
+Use the event
+mouseDown
+mouseOver
+-> paint
+
+contrary is mouseUp
+
+if mouseDown and mouseOver => paint
+else if mouseUp => NO paint
+
+
+1. I need to add an addEventListener on every box of the canvas
+-> addEventListener("mouseDown", mouseDownCallback)
+-> addEventListener("mouseOver", mouseOverCallback)
+-> addEventListener("mouseUp", mouseUpCallback)
+
+A)
+<!-- global variable -->
+let isMouseDown = false;
+
+B)
+When the mouseDownCallback will be called -> set isMouseDown to true;
+
+C)
+In the mouseOverCallback, we need to add
+some conditinal to check if the mouse is down by checking the value
+of the variable isMouseDown
+If isMouseDown is true -> paint
+
+D)
+In the mouseUpCallback
+set isMouseDown to false
