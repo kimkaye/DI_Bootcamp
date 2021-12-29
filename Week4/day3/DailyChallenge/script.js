@@ -32,7 +32,7 @@ let inventory = [
 //     carInventory.sort();
 //     console.log(carInventory);
 // }
-// sortCarInventoryByYear(inventory);
+// sortCarInventoryByYear(inventory);![](../../../../../../../var/folders/mx/m5x6zf651z9816y_lxnkpsh40000gn/T/TemporaryItems/NSIRD_screencaptureui_zf1b4w/Screen Shot 2021-12-28 at 10.41.17.png)
 
 
 // sort by salary
