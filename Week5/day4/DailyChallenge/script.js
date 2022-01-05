@@ -1,119 +1,40 @@
-function makeAllCaps(arrayOfWords){
-    return new Promise(function (resolve, reject) {
-        if(arrayOfWords.every(i => (typeof i === "string"))){
-            let capitalaizedArr = arrayOfWords.map(function(x){ return x.toUpperCase();});
-            resolve(capitalaizedArr)
-        } else {
-            reject("the array contains things that are not strings")
-            // throw new Error("the array contains things that are not strings")
-        }
-    });
-}
+// Daily Challenge : Promises
 
-function sortWords(wordArr){
-    return new Promise(function (resolve, reject){
-        wordArr.sort();
-        resolve(wordArr)
-    })
-}
-
-let namesArr = ["kim", "ariel"];
-
-makeAllCaps(namesArr)
-    .then(sortWords)
-    .then((result) => console.log(result))
-    .catch(error => console.log(error))
+const promise1 = Promise.resolve(3);
+const promise2 = 42;
+const promise3 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 3000, 'foo');
+});
 
 
+// const fetchSwapi = async function(){
+//     try {
+//         let values = await Promise.all([promise1, promise2, promise3]);
+//         console.log(values);
+//     }catch{
+//         console.log("oops!");
+//     }
+// }
+//
+// fetchSwapi();
 
-//2
-
-let morse = `{
-  "0": "-----",
-  "1": ".----",
-  "2": "..---",
-  "3": "...--",
-  "4": "....-",
-  "5": ".....",
-  "6": "-....",
-  "7": "--...",
-  "8": "---..",
-  "9": "----.",
-  "a": ".-",
-  "b": "-...",
-  "c": "-.-.",
-  "d": "-..",
-  "e": ".",
-  "f": "..-.",
-  "g": "--.",
-  "h": "....",
-  "i": "..",
-  "j": ".---",
-  "k": "-.-",
-  "l": ".-..",
-  "m": "--",
-  "n": "-.",
-  "o": "---",
-  "p": ".--.",
-  "q": "--.-",
-  "r": ".-.",
-  "s": "...",
-  "t": "-",
-  "u": "..-",
-  "v": "...-",
-  "w": ".--",
-  "x": "-..-",
-  "y": "-.--",
-  "z": "--..",
-  ".": ".-.-.-",
-  ",": "--..--",
-  "?": "..--..",
-  "!": "-.-.--",
-  "-": "-....-",
-  "/": "-..-.",
-  "@": ".--.-.",
-  "(": "-.--.",
-  ")": "-.--.-"
-}`
-
-function toJs(morse){
-    return new Promise(function (resolve, reject) {
-        let jsObject = JSON.parse(morse);
-        if(Object.keys(jsObject).length !== 0){
-            resolve(jsObject);
-        }else {
-            reject("the object is empty!")
-        }
-    });
-}
-function toMorse(morseJS){
-    return new Promise(function (resolve, reject) {
-
-        let word = prompt("Please enter word or a sentence");
-        let morseArr = [];
-        for(let i=0; i < word.length; i++){
-            let currentLetter = word[i];
-            let morseValue = morseJS[currentLetter];
-            if(morseValue === undefined){
-                reject("the character doesn't exist")
-            }else {
-                morseArr.push(morseValue);
+function promiseAll(arrayOfPromise){
+    let newArr = [];
+    return new Promise(async (resolve, reject) => {
+        for(let i = 0; i<arrayOfPromise.length; i++){
+            let promise = arrayOfPromise[i];
+            try{
+                let result = await promise;
+                newArr.push(result);
+            }catch(err){
+                console.error("an error was found "+ err)
             }
         }
-        resolve(morseArr);
-
+        resolve(newArr);
     })
 }
-
-function joinWords(arrMorse){
-    return new Promise(function (resolve, reject) {
-        let joinWord = arrMorse.join('\n');
-        resolve(joinWord);
-    })
-}
-
-toJs(morse)
-    .then(toMorse)
-    .then(joinWords)
+let arrOfPromise = [promise1, promise2, promise3];
+promiseAll(arrOfPromise)
     .then((result) => console.log(result))
-    .catch(error => console.log(error))
+
+
