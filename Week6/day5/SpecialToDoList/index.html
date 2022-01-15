@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+        <div class="nav-title">
+            KimKaye
+        </div>
+    </div>
+    <div class="nav-btn">
+        <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    <div class="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#projects">My Projects</a>
+        <a href="#skills">My Skills</a>
+<!--        <a href="#contact" target="_blank">Contact Me</a>-->
+<!--        <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>-->
+    </div>
+</div>
+
+<!--about-->
+<div class="container">
+<div class ="about-wrapper">
+    <div class = "about-left">
+        <form class="todo-form" id="todo-form" action="display.html">
+            <label for="tname">Task name:</label>
+            <input type="text" id="tname" name="tname" class="todoInputName"><br><br>
+
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" class="todoInputDescription"><br><br>
+
+<!--            <label for="startDate">Start day:</label>-->
+<!--            <input type="startDate" id="startDate" name="startDate" class="todoInputStart"><br><br>-->
+
+            <label for="start">Start date:</label>
+
+            <input type="date" id="start" name="trip-start"
+                   value="2018-07-22"
+                   min="2018-06-07T00:00" max="2025-06-14T00:00" class="todoInputStart">
+
+            <label for="end">End date:</label>
+
+            <input type="date" id="end" name="trip-start"
+                   value="2018-07-22"
+                   min="2018-06-07T00:00" max="2025-06-14T00:00" class="todoInputEnd">
+
+            <button type="submit" class="add-button">Add</button>
+        </form>
+    </div>
+         <div class = "about-right">
+        </div>
+</div>
+</div>
+
+
+    <footer class="">
+         <p>Kim Kaye 2021</p>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
