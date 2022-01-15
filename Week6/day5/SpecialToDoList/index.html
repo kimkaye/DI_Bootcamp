@@ -22,56 +22,42 @@
     <div class="nav-btn">
         <label for="nav-check">
             <span></span>
-            <span></span>
-            <span></span>
         </label>
     </div>
     <div class="nav-links">
-        <a href="#about">About Me</a>
-        <a href="#projects">My Projects</a>
-        <a href="#skills">My Skills</a>
-<!--        <a href="#contact" target="_blank">Contact Me</a>-->
-<!--        <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>-->
+        <a href="#about">Tasks</a>
     </div>
 </div>
 
 <!--about-->
 <div class="container">
-<div class ="about-wrapper">
-    <div class = "about-left">
+    <h1>TO DO LIST</h1>
+<div class ="toDoList">
         <form class="todo-form" id="todo-form" action="display.html">
             <label for="tname">Task name:</label>
             <input type="text" id="tname" name="tname" class="todoInputName"><br><br>
 
             <label for="description">Description:</label>
-            <input type="text" id="description" name="description" class="todoInputDescription"><br><br>
-
-<!--            <label for="startDate">Start day:</label>-->
-<!--            <input type="startDate" id="startDate" name="startDate" class="todoInputStart"><br><br>-->
+            <textarea rows = "5" cols = "20" type="text" id="description" name="description" class="todoInputDescription"></textarea><br><br>
 
             <label for="start">Start date:</label>
 
             <input type="date" id="start" name="trip-start"
-                   value="2018-07-22"
-                   min="2018-06-07T00:00" max="2025-06-14T00:00" class="todoInputStart">
+                   value="2022-01-15"
+                   min="2018-06-07T00:00" max="2025-06-14T00:00" class="todoInputStart"><br><br>
 
             <label for="end">End date:</label>
 
             <input type="date" id="end" name="trip-start"
-                   value="2018-07-22"
-                   min="2018-06-07T00:00" max="2025-06-14T00:00" class="todoInputEnd">
+                   value="2022-01-15"
+                   min="2018-06-07T00:00" max="2025-06-14T00:00" class="todoInputEnd"><br><br>
 
             <button type="submit" class="add-button">Add</button>
         </form>
     </div>
-         <div class = "about-right">
-        </div>
 </div>
-</div>
-
-
     <footer class="">
-         <p>Kim Kaye 2021</p>
+         <p>Kim Kaye 2022</p>
     </footer>
 <script src="script.js"></script>
 

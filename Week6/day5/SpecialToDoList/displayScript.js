@@ -80,7 +80,9 @@ for(let i = 0; i< sortedArr.length; i++){
                  button.remove();
                  x.remove();
                  alert("The task has been removed!");
-                 sortedArr.remove(i);
+                 sortedArr = sortedArr.filter(function(item) {
+                     return item.name !== task.name
+                 })
                  localStorage.setItem('tasks', JSON.stringify(sortedArr));
              }
           }
@@ -93,7 +95,7 @@ for(let i = 0; i< sortedArr.length; i++){
 
 
     let editTask = ()=> {
-        hiddenForm.style.visibility = 'visible'
+        hiddenForm.style.display = 'inline-block'
         hiddenForm.addEventListener('submit', function(event) {
             event.preventDefault();
             const todoInputName = document.querySelector('.todoInputName').value;
