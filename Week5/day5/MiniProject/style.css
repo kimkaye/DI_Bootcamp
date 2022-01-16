@@ -1,0 +1,120 @@
+body{
+    margin: auto 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp");
+}
+.RobotsPage {
+    margin-top: 50px;
+}
+
+.robots {
+    display: flex;
+    flex-wrap: wrap;
+    right: 0;
+    top: 0;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+}
+.robotTitle {
+    text-align: center;
+    right: 50px;
+    font-size: 60px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*footer*/
+footer {
+    left: 0;
+    bottom: 0;
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*responsive nav*/
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: midnightblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav>.nav-links>a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+#filter{
+    padding-left: 30px;
+    padding-top: 30px;
+    align-content: center;
+}
+
+#starWarsImage{
+    max-width: 400px;
+    margin-top: 200px;
+}
+
+.someoneInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#yellowSquare{
+    width: 500px;
+    height: 300px;
+    border: 2px solid yellow;
+    border-radius: 12px;
+    padding: 5px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+}
+.findSomeone{
+    margin-top: 50px;
+}

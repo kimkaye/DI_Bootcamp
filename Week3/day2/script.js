@@ -53,7 +53,7 @@
 //         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 //         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 // </div>
-// <script src="script.js"></script>
+// <script src="script1.js"></script>
 // </body>
 // </html>
 //
@@ -199,7 +199,7 @@
 //     <button id="btnPink">PINK</button><br>
 //     <button id="btnOrange">ORANGE</button><br>
 //
-//     <script src="script.js"></script>
+//     <script src="script1.js"></script>
 // </body>
 // </html>
 // style.css
@@ -270,7 +270,7 @@
 //
 // Lise  12:07 PM
 // ---Solution Exercise 1---
-// script.js
+// script1.js
 // // Exercise 1 - basic add event listener
 // // 1. Create two buttons - id of "red", id of "blue"
 // // 2. When we click on the red button -> Change the backgroundcolor of the page to red
@@ -305,7 +305,7 @@
 // <button id="btnBlue">BLUE</button>
 // <button id="btnRed">RED</button>
 //
-// <script src="script.js"></script>
+// <script src="script1.js"></script>
 // </body>
 // </html>
 // style.css
@@ -322,7 +322,7 @@
 //
 // Lise  12:52 PM
 // Solution Exercise 2
-// script.js
+// script1.js
 // // Exercise 2 - using the event object
 // // let colors = ["blue", "yellow", "green", "pink"];
 // // Add inside the HTML file a div of id "container" (do it directly in the HTML)
@@ -395,7 +395,7 @@
 //     <body>
 //     <div id="container"></div>
 //
-//     <script src="script.js"></script>
+//     <script src="script1.js"></script>
 //     </body>
 // </html>
 //     style.css
@@ -429,7 +429,7 @@
 //
 //     Lise  1:39 PM
 //     Lesson on forms
-//     script.js
+//     script1.js
 //     document.forms -> retrieve all the forms on the page
 //
 //     document.forms[0] -> retrieve the first form
@@ -534,7 +534,7 @@
 //
 //     <div id="users"></div>
 //
-//     <script src="script.js"></script>
+//     <script src="script1.js"></script>
 //     </body>
 // </html>
 //

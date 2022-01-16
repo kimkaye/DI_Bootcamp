@@ -95,6 +95,10 @@ function addRobots(robots) {
         parent.appendChild(newDiv)
     }
 }
+
+
+
+
 addRobots(robots);
 
 function myFunction() {

@@ -339,7 +339,7 @@
 // <body>
 // <div id="shopping"></div>
 //
-// <script src="script.js"></script>
+// <script src="script1.js"></script>
 // </body>
 // </html>
 // style.css

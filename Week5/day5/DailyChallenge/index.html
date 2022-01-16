@@ -1,0 +1,31 @@
+<html>
+<body>
+<form id="form" name="formName">
+    <label for="currency">Choose currency</label><br>
+    <input id="number" type="number" value="money">
+    <input id="myText" type="text" value="colors">
+    <select name='currencies' id="currency" onchange="myFunction(event)">
+        <option value='AED' title='United Arab Emirates Dirham'>AED</option>
+        <option value='AFN' title='Afghan Afghani'>AFN</option>
+        <option value='ALL' title='Albanian Lek'>ALL</option>
+        <option value='AMD' title='Armenian Dram'>AMD</option>
+        <option value='ANG' title='Netherlands Antillean Guilder'>ANG</option>
+        [...]
+    </select>
+    <br>
+<!--    <label for="currentCurrency">Search gif</label><br>-->
+<!--    <input type="text" placeholder="Type something..." id="currentCurrency" name="first">-->
+<!--    <label for="receiveCurrency">Search gif</label><br>-->
+<!--    <input type="text" placeholder="Type something..." id="receiveCurrency" name="first">-->
+<!--    <label for="moneyAmount">Search gif</label><br>-->
+<!--    <input type="text" placeholder="Type something..." id="moneyAmount" name="first">-->
+    <input type="submit" value="search">
+</form>
+<div id="gifArea">
+
+</div>
+<button onclick="deleteAll()">delete all</button>
+<script src="script.js"></script>
+
+</body>
+</html>
